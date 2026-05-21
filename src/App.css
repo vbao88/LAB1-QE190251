@@ -1,11 +1,9 @@
-/* --- BIẾN CSS VÀ RESET CƠ BẢN --- */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* --- BỐ CỤC CHÍNH (Responsive & Centered) --- */
 .app-container {
   min-height: 100vh;
   display: flex;
@@ -17,7 +15,6 @@
   padding: 20px;
 }
 
-/* --- GIAO DIỆN LIGHT MODE (Mặc định) --- */
 .light-mode {
   background-color: #f0f2f5;
   color: #333;
@@ -25,10 +22,9 @@
 
 .light-mode .profile-card {
   background-color: #ffffff;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-/* --- GIAO DIỆN DARK MODE --- */
 .dark-mode {
   background-color: #18191a;
   color: #e4e6eb;
@@ -36,26 +32,23 @@
 
 .dark-mode .profile-card {
   background-color: #242526;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5); /* Đổ bóng đậm hơn */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 }
 
-/* --- THẺ PROFILE CARD (Bo góc, Hiệu ứng Hover) --- */
 .profile-card {
   width: 100%;
   max-width: 400px;
-  border-radius: 20px; /* Bo góc */
+  border-radius: 20px;
   padding: 30px;
   text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hoạt ảnh cho card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 20px;
 }
 
-/* Card hover animation */
 .profile-card:hover {
   transform: translateY(-10px);
 }
 
-/* --- ẢNH AVATAR --- */
 .avatar {
   width: 120px;
   height: 120px;
@@ -65,7 +58,6 @@
   margin-bottom: 15px;
 }
 
-/* --- DANH SÁCH SỞ THÍCH --- */
 .hobbies-section {
   margin: 15px 0;
   text-align: left;
@@ -79,7 +71,6 @@
   margin-top: 8px;
 }
 
-/* --- TRẠNG THÁI ONLINE/OFFLINE --- */
 .status-section {
   margin: 20px 0;
   padding-bottom: 15px;
@@ -92,7 +83,6 @@
 .status-text.online { color: #28a745; }
 .status-text.offline { color: #dc3545; }
 
-/* --- NÚT BẤM CHUNG (Button Hover Effect) --- */
 .btn {
   padding: 10px 20px;
   border: none;
@@ -101,7 +91,7 @@
   font-weight: bold;
   cursor: pointer;
   margin-top: 10px;
-  transition: background-color 0.2s, transform 0.1s; /* Hiệu ứng hover cho nút */
+  transition: background-color 0.2s, transform 0.1s;
 }
 
 .btn:active {
